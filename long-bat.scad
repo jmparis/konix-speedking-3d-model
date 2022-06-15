@@ -16,3 +16,14 @@ cylinder(
     d1  =   cylinder_d1     ,
     d2  =   cylinder_d2
  );
+
+translate( [0, 0, -14] )
+difference() {
+    difference() {
+        sphere( d = 28 );
+        sphere( d = 27 );
+    }
+    
+    translate( [0, 0, -25])
+        cube( 28 );
+}
